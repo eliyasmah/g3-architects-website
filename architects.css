@@ -115,6 +115,7 @@ nav li a{
 }
 .features-container img{
     border-radius: 8px;
+    padding-left: 100px;
 }
 .Features-title{
     color: #131313;
@@ -133,6 +134,31 @@ nav li a{
     font-size: 1.25rem;
     font-weight: 600;
     margin: 0;
+}
+.ten-year-experience{
+    background-color: #FF900E;
+    width: 340px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 50px;
+    border-radius: 8px;
+}
+.ten-year-experience h1{
+    color: #FFF;
+    font-size: 65px;
+    font-weight: 700;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+.ten-year-experience p{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 40px;
 }
 
 /* ........facts-container style......... */
@@ -207,6 +233,8 @@ nav li a{
 
 }
 
+
+
 /* responsive media query for mobile */
 
 @media screen and (max-width:576px) {
@@ -255,6 +283,20 @@ nav li a{
     }
     .features-container img{
         width: 100%;
+        padding: 0;
+    }
+    .ten-year-experience{
+       position: static;
+       width: 250px;
+       height: 150px;
+       padding: 0 1.5rem;
+       margin: 0 auto;
+    }
+    .ten-year-experience h1{
+        font-size: 40px;
+    }
+    .ten-year-experience p{
+        font-size: 1rem;
     }
 
     /* facts-container style */
@@ -325,6 +367,8 @@ nav li a{
     }
         .features-container img{
         width: 100%;
+        padding: 0;
+        margin-left: 5%;
     } 
     .features-tasks{
         display: grid;
@@ -334,6 +378,7 @@ nav li a{
     .features-task{
         margin: 0;
     }
+    
         /* facts-container style */
         .facts-container{
             padding: 50px;
