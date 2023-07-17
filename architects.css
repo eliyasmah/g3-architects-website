@@ -1,31 +1,52 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
 p{
     color:#727272;
 font-size: 1rem;
 font-weight: 400;
 line-height: 1.5rem;
 }
-.header-container{
-    background-color: rgba(255, 144, 14, 0.10);
+.primary-button{
+    padding: 20px 25px;
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    
 }
-.nav{
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    padding:50px 240px;
+}
+nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding:5rem 15rem;
+
 }
-.nav h3{
+nav> h3{
     font-size: 2.8rem;
     font-weight: 700;
 }
-.nav ul{
+nav ul{
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
-.nav li{
+nav li{
     list-style: none;
 }
-.nav li a{
+nav li a{
     text-decoration: none;
     font-size: 1.125rem;
     font-weight: 500;
@@ -37,20 +58,57 @@ line-height: 1.5rem;
     gap: 92px;
     flex-direction: column;
     align-items: center;
-    padding: 50px 240px ;
 }
 .banner-container img{
-    width: 1440px;
+    width: 100%;
 }
 .banner-info{
     text-align: center;
-    width: 862px;
-    height: 225px;
+    width: 50%;
 }
 .banner-info h2{
     color:#131313;
-font-size: 64px;
-font-weight: 700;
-text-align: center;
-padding:0 25px;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* responsive media query for mobile */
+
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        gap: 10px;
+        padding-left:0 ;
+    }
+    nav> h3{
+        font-size: 1.8rem;
+    }
+    .banner-container{
+        gap: 20px;
+    }
+    .banner-info{
+        width: 100%;
+    }
+    .banner-info h2{
+        font-size: 2rem;
+    }
+}
+
+/* responsive media query for tablet */
+@media screen and (min-width:577px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .banner-info h2{
+        font-size: 3rem;
+    }
 }
